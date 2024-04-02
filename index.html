@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essential Minecraft Mods</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Essential Minecraft Mod list</h1>
+    </div>
+    <div class="container">
+        <h6>Chosen minecraft uppdate 1.20.4</h6>
+        <h3>select what mods you want to download</h3>
+        <div class="customCheckBoxHolder">
+            <input type="checkbox" id="option-all" class="customCheckBoxInput" onchange="checkAll(this)">
+            <label for="option-all" class="customCheckBoxWrapper">
+                <div class="customCheckBox">
+                    <div class="inner">SELECT ALL</div>
+                </div>
+            </label>
+        </div>
+        <div><h6>==================================================================================</h6></div>
+        <div class="customCheckBoxHolder">
+            <input type="checkbox" id="option-a" class="customCheckBoxInput">
+            <label for="option-a" class="customCheckBoxWrapper">
+                <div class="customCheckBox">
+                    <div class="inner">Tweakaroo</div>
+                </div>
+            </label>
+            <span class="tooltip">
+                <h5>Tweakeroo also requires the MaLiLib library mod</h5>
+                <br>
+                <h6>Tweakeroo is a client-side mod, which adds a whole
+                    <br> bunch of various different "tweaks" to the game
+                </h6>
+            </span>
+        </div>
+
+        <div class="customCheckBoxHolder">
+            <input type="checkbox" id="option-b" class="customCheckBoxInput">
+            <label for="option-b" class="customCheckBoxWrapper">
+                <div class="customCheckBox">
+                    <div class="inner">Essential Mod</div>
+                </div>
+            </label>
+            <span class="tooltip">
+                <h6>Easily join your friends worlds.
+                    <br>
+                    Send messages across servers.
+                    <br>
+                    Add customizations to your skins.
+                </h6>
+            </span>
+        </div>
+
+        <div class="customCheckBoxHolder">
+            <input type="checkbox" id="option-c" class="customCheckBoxInput">
+            <label for="option-c" class="customCheckBoxWrapper">
+                <div class="customCheckBox">
+                    <div class="inner">Fabric API</div>
+                </div>
+            </label>
+            <span class="tooltip">
+                <h6>Fabric’s APIs are lightweight and modular,
+                    <br>
+                    making porting faster and game instances leaner.
+                </h6>
+            </span>
+        </div>
+
+        <div class="customCheckBoxHolder">
+            <input type="checkbox" id="option-d" class="customCheckBoxInput">
+            <label for="option-d" class="customCheckBoxWrapper">
+                <div class="customCheckBox">
+                    <div class="inner">Iris Shaders</div>
+                </div>
+            </label>
+            <span class="tooltip">
+                <h6>A modern shaders mod for Minecraft intended
+                    <br>
+                    to be compatible with existing OptiFine shader packs
+                </h6>
+            </span>
+        </div>
+
+        <div class="customCheckBoxHolder">
+            <input type="checkbox" id="option-e" class="customCheckBoxInput">
+            <label for="option-e" class="customCheckBoxWrapper">
+                <div class="customCheckBox">
+                    <div class="inner">item scroller</div>
+                </div>
+            </label>
+            <span class="tooltip">
+                <h6>A client-side mod that adds several
+                    <br>
+                    ways of moving items in inventory GUIs.
+                    <br>
+                    This is done by scrolling the mouse wheel over item slots
+                    <br>
+                    (optionally while holding some modifier keys)
+                    <br>
+                    or by holding down modifier keys and then left- or right-click
+                    <br>
+                    dragging over the slots.
+                </h6>
+            </span>
+        </div>
+
+        <div class="customCheckBoxHolder">
+            <input type="checkbox" id="option-f" class="customCheckBoxInput">
+            <label for="option-f" class="customCheckBoxWrapper">
+                <div class="customCheckBox">
+                    <div class="inner">litematica</div>
+                </div>
+            </label>
+            <span class="tooltip">
+                <h6>The main feature of a schematic mod
+                    <br>
+                    is to display a "hologram" version of a structure,
+                    <br>
+                    which shows you exactly how to build the structure
+                    <br>
+                    and where to place the blocks.
+                    <br>
+                    It also includes a (configurable) overlay to highlight missing,
+                    <br>
+                    extra or wrongly placed blocks.
+                </h6>
+            </span>
+        </div>
+
+        <div class="customCheckBoxHolder">
+            <input type="checkbox" id="option-g" class="customCheckBoxInput">
+            <label for="option-g" class="customCheckBoxWrapper">
+                <div class="customCheckBox">
+                    <div class="inner">MaLiLib</div>
+                </div>
+            </label>
+            <span class="tooltip">
+                <h6>MaLiLib is a library mod containing shared code
+                    <br>
+                    for masa's client-side mods.
+                    <br>
+                    Basically it contains all the configuration options,
+                    <br>
+                    keybind stuff, most of the GUI code and a bunch of other utility stuff
+                    <br>
+                    for the mods that use it
+                </h6>
+            </span>
+        </div>
+
+        <div class="customCheckBoxHolder">
+            <input type="checkbox" id="option-h" class="customCheckBoxInput">
+            <label for="option-h" class="customCheckBoxWrapper">
+                <div class="customCheckBox">
+                    <div class="inner">Minihud</div>
+                </div>
+            </label>
+            <span class="tooltip">
+                <h6>A client-side mod that allows displaying various
+                    <br>
+                    "info lines" on the screen ("mini-F3")
+                </h6>
+            </span>
+        </div>
+
+        <div class="customCheckBoxHolder">
+            <input type="checkbox" id="option-i" class="customCheckBoxInput">
+            <label for="option-i" class="customCheckBoxWrapper">
+                <div class="customCheckBox">
+                    <div class="inner">Mod Menu</div>
+                </div>
+            </label>
+            <span class="tooltip">
+                <h6>Adds a mod menu to view the list of
+                    <br>
+                    mods you have installed.
+                </h6>
+            </span>
+        </div>
+
+        <div class="customCheckBoxHolder">
+            <input type="checkbox" id="option-j" class="customCheckBoxInput">
+            <label for="option-j" class="customCheckBoxWrapper">
+                <div class="customCheckBox">
+                    <div class="inner">No Fog</div>
+                </div>
+            </label>
+            <span class="tooltip">
+                <h6>A highly configurable client-side
+                    <br>
+                    Forge & Fabric mod that removes all fog.
+                </h6>
+            </span>
+        </div>
+
+        <div class="customCheckBoxHolder">
+            <input type="checkbox" id="option-k" class="customCheckBoxInput">
+            <label for="option-k" class="customCheckBoxWrapper">
+                <div class="customCheckBox">
+                    <div class="inner">replaymod</div>
+                </div>
+            </label>
+            <span class="tooltip">
+                <h6> A Minecraft Mod to record,
+                    <br>
+                    relive and share your experience
+                </h6>
+            </span>
+        </div>
+
+        <div class="customCheckBoxHolder">
+            <input type="checkbox" id="option-l" class="customCheckBoxInput">
+            <label for="option-l" class="customCheckBoxWrapper">
+                <div class="customCheckBox">
+                    <div class="inner">Carpet Mod</div>
+                </div>
+            </label>
+            <span class="tooltip">
+                <h6>Carpet. Carpet is a mod for vanilla Minecraft
+                    <br>
+                    that allows you to take full control of what matters
+                    <br>
+                    from a technical perspective of the game.
+                </h6>
+            </span>
+        </div>
+
+        <div class="customCheckBoxHolder">
+            <input type="checkbox" id="option-m" class="customCheckBoxInput">
+            <label for="option-m" class="customCheckBoxWrapper">
+                <div class="customCheckBox">
+                    <div class="inner">WorldEdit</div>
+                </div>
+            </label>
+            <span class="tooltip">
+                <h6>A Minecraft Map Editor... that runs in-game! With selections,
+                    <br>
+                    schematics, copy and paste, brushes, and scripting.
+                </h6>
+            </span>
+        </div>
+
+        <div class="customCheckBoxHolder">
+            <input type="checkbox" id="option-n" class="customCheckBoxInput">
+            <label for="option-n" class="customCheckBoxWrapper">
+                <div class="customCheckBox">
+                    <div class="inner">Indium</div>
+                </div>
+            </label>
+            <span class="tooltip">
+                <h5>Indium also requires the MaLiLib library mod and Sodium mod</h5>
+                <br>
+                <h6>Indium is an addon mod for Sodium</h6>
+            </span>
+        </div>
+
+        <div class="customCheckBoxHolder">
+            <input type="checkbox" id="option-o" class="customCheckBoxInput">
+            <label for="option-o" class="customCheckBoxWrapper">
+                <div class="customCheckBox">
+                    <div class="inner">Carpet extra</div>
+                </div>
+            </label>
+            <span class="tooltip">
+                <h5>Carpet Extra also requires Carpet mod</h5>
+                <br>
+                <h6>Carpet Extra is an addon mod for the carpet mod </h6>
+            </span>
+        </div>
+
+        <div class="customCheckBoxHolder">
+            <input type="checkbox" id="option-p" class="customCheckBoxInput">
+            <label for="option-p" class="customCheckBoxWrapper">
+                <div class="customCheckBox">
+                    <div class="inner">Sodium</div>
+                </div>
+            </label>
+            <span class="tooltip">
+                <h6>Sodium is a free and open-source mod for Minecraft 1.16+
+                    <br>
+                    clients which greatly improves rendering performance while
+                    <br>
+                    fixing some graphical issues
+                </h6>
+            </span>
+        </div>
+        <div><h6>==================================================================================</h6></div>
+        <h3>Don't spam the button !</h3>
+        <h3>It takes a while before it starts downloading</h3>
+        <h3>Click here to download ZIP</h3>
+        <h4>V</h4>
+
+        <button type="button" class="button" id="submit-btn">
+            <span class="button__text">Download</span>
+            <span class="button__icon"><svg class="svg" data-name="Layer 2" id="bdd05811-e15d-428c-bb53-8661459f9307"
+                    viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z">
+                    </path>
+                    <path
+                        d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z">
+                    </path>
+                    <path
+                        d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z">
+                    </path>
+                </svg></span>
+            </button>
+        </div>
+    </div>
+
+    <footer> 
+        <p class="madeBy">Made by :</p>
+        <p class="webOwner">Marre</p>
+        <div>
+            <p>&copy; 2024 M4rreParre.github.io/MinecraftModlist_2.0. All rights reserved.</p>
+        </div>
+        
+        <div class="github-link">
+            <a href="https://github.com/M4rreParre">
+                <img src="github-mark-white.png" alt="github-logo">
+            </a>
+            <a href="https://github.com/M4rreParre" class="M4rreParre">M4rreParre</a>
+        </div>
+
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+    <script src="index.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Jost" rel="stylesheet">
+</body>
+
+</html>

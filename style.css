@@ -1,0 +1,306 @@
+@font-face{
+    font-family: mcFont;
+    src:url(mc.otf)
+}
+
+body{
+margin: 0;
+padding: 0;
+font-family:mcFont;
+background-image: url(mare_hemsid.png);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
+h5{
+  color: rgba(255, 0, 64, 0.685);
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+.hidden {
+  display: none;
+}
+
+h6{
+  user-select: none;
+  color: rgb(145, 189, 255);
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+h1{
+user-select: none;
+text-align: center;
+color: aliceblue;
+margin: 0px;
+background-color: rgb(13, 54, 64);
+padding: 33px ;
+font-size: 40px;
+}
+
+h3 {
+  user-select: none;
+  color: rgb(145, 189, 255);
+  margin: 0;
+  padding-top: 10px;
+}
+h4 {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  color: rgb(145, 189, 255);
+}
+
+.container { 
+    width: 600px;
+    border: 15px solid rgb(13, 54, 64);
+    padding: 50px;
+    margin: 20px auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(20, 94, 107);
+    border-radius: 20px;
+}
+
+.customCheckBoxHolder {
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.customCheckBox {
+  width: 200px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+  padding: 10px 8px;
+  background-color: rgb(16, 73, 83);
+  border-radius: 0px;
+  color:rgb(20, 35, 39);
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 300ms;
+  transition-property: color, background-color, box-shadow;
+  display: flex;
+  height: 32px;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 1px 0px inset, rgba(255, 255, 255, 0.17) 0px 1px 1px 0px;
+  outline: none;
+  justify-content: center;
+  min-width: 55px;
+}
+
+.customCheckBox:hover {
+  background-color: #122330;
+  color: rgb(0, 0, 0);
+  box-shadow: rgba(17, 31, 61) 0px -4px 1px 0px inset, rgba(255, 255, 255, 0.17) 0px -1px 1px 0px, rgba(0, 0, 0, 0.17) 0px 2px 4px 1px;
+}
+
+.customCheckBox .inner {
+  letter-spacing: normal;  
+  font-size: 18px;
+  font-weight: 900;
+  pointer-events: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 300ms;
+  transition-property: transform;
+  transform: translateY(0px);
+}
+
+.customCheckBox:hover .inner {
+  transform: translateY(-2px);
+}
+
+.customCheckBoxWrapper:first-of-type .customCheckBox {
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border-right: 0px;
+}
+
+.customCheckBoxWrapper:last-of-type .customCheckBox {
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border-left: 0px;
+}
+
+.customCheckBoxInput {
+  display: none;
+}
+
+.customCheckBoxInput:checked + .customCheckBoxWrapper .customCheckBox {
+  background-color: rgb(6, 72, 83);
+  color: rgb(213, 240, 246);
+  box-shadow: rgba(0, 0, 0, 0.23) 0px -4px 1px 0px inset, rgba(255, 255, 255, 0.17) 0px -1px 1px 0px, rgba(0, 0, 0, 0.17) 0px 2px 4px 1px;
+}
+
+.customCheckBoxInput:checked + .customCheckBoxWrapper .customCheckBox .inner {
+  transform: translateY(-2px);
+}
+
+.customCheckBoxInput:checked + .customCheckBoxWrapper .customCheckBox:hover {
+  background-color: rgb(54, 76, 177);
+  box-shadow: rgba(0, 0, 0, 0.26) 0px -4px 1px 0px inset, rgba(255, 255, 255, 0.17) 0px -1px 1px 0px, rgba(0, 0, 0, 0.15) 0px 3px 6px 2px;
+}
+
+.customCheckBoxWrapper .customCheckBox:hover .inner {
+  transform: translateY(-2px);
+}
+.button {
+  margin-top: 10px;
+  font-family: mcFont;
+  --main-focus: rgb(6, 72, 83);
+  --font-color: #dedede;
+  --bg-color-sub: rgb(10, 48, 54);
+  --bg-color: rgb(7, 46, 53);
+  --main-color: rgb(255, 255, 255);
+  position: relative;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: none;
+  box-shadow: 4px 4px varrgb(10, 48, 54);
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.button, .button__icon, .button__text {
+  transition: all 0.3s;
+}
+
+.button .button__text {
+  transform: translateX(21px);
+  color: var(--font-color);
+  font-weight: 600;
+}
+
+.button .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 34px;
+  background-color: var(--bg-color-sub);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button .svg {
+  width: 20px;
+  fill: var(--main-color);
+}
+
+.button:hover {
+  background: var(--bg-color);
+}
+
+.button:hover .button__text {
+  color: transparent;
+}
+
+.button:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.button:active {
+  transform: translate(3px, 3px);
+  box-shadow: 0px 0px var(--main-color);
+}
+
+.tooltip {
+  position: absolute;
+  display: none;
+  padding: 5px; 
+  white-space: nowrap;
+}
+
+.customCheckBoxHolder {
+  position: relative; 
+  padding-left: 20px; 
+}
+
+.customCheckBoxHolder:hover .tooltip {
+  display: block;
+  position: absolute;
+  top: 50%; 
+  left: calc(100% + 5px); 
+  transform: translateY(-50%); 
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  width: auto;
+}
+
+#option-all.customCheckBoxInput:checked + .customCheckBoxWrapper .customCheckBox {
+  padding-right: 56px; 
+  padding-left: 56px;
+  border-radius: 8px; 
+}
+#option-all.customCheckBoxInput + .customCheckBoxWrapper .customCheckBox {
+  padding-right: 56px; 
+  padding-left: 56px;
+  border-radius: 8px;
+  background-color: #061927;
+  color: aliceblue;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  bottom: -10;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+body {
+  overflow-x: hidden; 
+}
+
+
+p.webOwner {
+  font-weight: bold;
+  font-size: 27px;
+  margin: 0;
+  
+}
+
+p.madeBy {
+  text-decoration: underline;
+  margin: 0;
+  font-size: 18px;
+}
+
+.github-link{
+  display: flex;
+  align-items: center;
+}
+
+.github-link img {
+  width: 30px;
+  margin: 0 10px;
+}
+
+.M4rreParre {
+  color: aliceblue;
+}
+
+.M4rreParre:visited {
+  color: aliceblue;
+}
+  
