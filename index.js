@@ -1,10 +1,10 @@
 // Initialize JSZip instance
 var zip = new JSZip();
 
-// Array to store the checked checkboxes
+// Array to store the checked checkboxes names of the checked checkboxes ex, option-a
 var checkedCheckboxes = [];
 
-// Array to store the checkbox states
+// Array to store the checkbox states  true or false
 var checkboxStates = [];
 
 // Function to handle click event on the "Submit" button
@@ -138,20 +138,7 @@ function fetchAndAddToZip(url) {
         });
 }
 
-// Function to toggle visibility of h5 and h6 elements
-function toggleDetails(checkboxId) {
-    var note = document.getElementById("note-" + checkboxId);
-    var desc = document.getElementById("desc-" + checkboxId);
-    if (note && desc) {
-        note.classList.toggle("hidden");
-        desc.classList.toggle("hidden");
-    }
-}
 
-// Event listener for arrow click
-document.getElementById("arrow-a").addEventListener("click", function() {
-    toggleDetails("a");
-});
 
 // Function to handle click event on the "Select All" checkbox
 function checkAll(myCheckbox) {
@@ -161,6 +148,31 @@ function checkAll(myCheckbox) {
     });
     // Update and display the current state of each checkbox
     displayCheckboxStates();
+}
+
+function checkMaLiLib(myCheckbox) {
+    var malilib = document.querySelector('input[type="checkbox"]#option-g');
+    if (myCheckbox.checked) {
+        malilib.checked = true; 
+    }
+}
+
+function checkMaLiLibandSodium(myCheckbox) {
+    var malilibandsodium = document.querySelectorAll('input[type="checkbox"]#option-g, input[type="checkbox"]#option-p');
+    malilibandsodium.forEach(function(checkbox) {
+        if (checkbox.id === 'option-g' || checkbox.id === 'option-p') {
+            if (myCheckbox.checked) {
+                checkbox.checked = true;
+            }
+        }
+    });
+}
+
+function checkCarpet(myCheckbox) {
+    var carpet = document.querySelector('input[type="checkbox"]#option-l');
+    if (myCheckbox.checked) {
+        carpet.checked = true; 
+    }
 }
 
 // Function to display the current state of each checkbox
