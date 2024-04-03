@@ -91,13 +91,14 @@
         </div>
 
         <div class="customCheckBoxHolder">
-            <input type="checkbox" id="option-e" class="customCheckBoxInput">
+            <input type="checkbox" id="option-e" class="customCheckBoxInput" onchange="checkMaLiLib(this)" >
             <label for="option-e" class="customCheckBoxWrapper">
                 <div class="customCheckBox">
                     <div class="inner">item scroller</div>
                 </div>
             </label>
             <span class="tooltip">
+                <h5> item scroller also requires the MaLiLib library mod </h5>
                 <h6>A client-side mod that adds several
                     <br>
                     ways of moving items in inventory GUIs.
@@ -114,13 +115,14 @@
         </div>
 
         <div class="customCheckBoxHolder">
-            <input type="checkbox" id="option-f" class="customCheckBoxInput">
+            <input type="checkbox" id="option-f" class="customCheckBoxInput" onchange="checkMaLiLib(this)">
             <label for="option-f" class="customCheckBoxWrapper">
                 <div class="customCheckBox">
                     <div class="inner">litematica</div>
                 </div>
             </label>
             <span class="tooltip">
+                <h5> Litematica also requires the MaLiLib library mod </h5>
                 <h6>The main feature of a schematic mod
                     <br>
                     is to display a "hologram" version of a structure,
@@ -158,13 +160,14 @@
         </div>
 
         <div class="customCheckBoxHolder">
-            <input type="checkbox" id="option-h" class="customCheckBoxInput">
+            <input type="checkbox" id="option-h" class="customCheckBoxInput" onchange="checkMaLiLib(this)" >
             <label for="option-h" class="customCheckBoxWrapper">
                 <div class="customCheckBox">
                     <div class="inner">Minihud</div>
                 </div>
             </label>
             <span class="tooltip">
+                <h5> Minihud also requires the MaLiLib library mod </h5>
                 <h6>A client-side mod that allows displaying various
                     <br>
                     "info lines" on the screen ("mini-F3")
@@ -250,14 +253,14 @@
         </div>
 
         <div class="customCheckBoxHolder">
-            <input type="checkbox" id="option-n" class="customCheckBoxInput" onchange="checkMaLiLibandSodium(this)">
+            <input type="checkbox" id="option-n" class="customCheckBoxInput" onchange="checkSodium(this)">
             <label for="option-n" class="customCheckBoxWrapper">
                 <div class="customCheckBox">
                     <div class="inner">Indium</div>
                 </div>
             </label>
             <span class="tooltip">
-                <h5>Indium also requires the MaLiLib library mod and Sodium mod</h5>
+                <h5>Indium also requires the Sodium mod and fabric API</h5>
                 <br>
                 <h6>Indium is an addon mod for Sodium</h6>
             </span>
