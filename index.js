@@ -157,10 +157,10 @@ function checkMaLiLib(myCheckbox) {
     }
 }
 
-function checkMaLiLibandSodium(myCheckbox) {
-    var malilibandsodium = document.querySelectorAll('input[type="checkbox"]#option-g, input[type="checkbox"]#option-p');
+function checkSodium(myCheckbox) {
+    var malilibandsodium = document.querySelectorAll('input[type="checkbox"]#option-c, input[type="checkbox"]#option-p');
     malilibandsodium.forEach(function(checkbox) {
-        if (checkbox.id === 'option-g' || checkbox.id === 'option-p') {
+        if (checkbox.id === 'option-c' || checkbox.id === 'option-p') {
             if (myCheckbox.checked) {
                 checkbox.checked = true;
             }
