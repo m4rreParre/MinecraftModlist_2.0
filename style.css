@@ -225,7 +225,6 @@ h4 {
 
 .customCheckBoxHolder {
   position: relative; 
-  padding-left: 20px; 
 }
 
 .customCheckBoxHolder:hover .tooltip {
